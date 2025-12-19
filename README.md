@@ -1,124 +1,97 @@
-# 🔐 Elsakr Password Vault
+# 🦅 Elsakr Password Vault
 
-<p align="center">
-  <img src="assets/Sakr-logo.png" alt="Elsakr Logo" width="120">
-</p>
+<div align="center">
+  <a href="https://elsakr.company">
+    <img src="https://elsakr.company/Sakr-logo.webp" alt="Elsakr Logo" width="200">
+  </a>
+</div>
 
-<p align="center">
-  <strong>Generate, Analyze & Store Passwords Securely</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python">
-  <img src="https://img.shields.io/badge/Encryption-AES--256-green?style=flat-square&logo=security">
-  <img src="https://img.shields.io/badge/Platform-Windows-blue?style=flat-square&logo=windows">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square">
-</p>
+> **Part of Elsakr Open Source Tools Ecosystem — [View All Tools](https://elsakr.company/tools)**  
+> *Generate. Analyze. Protect. Your password shouldn't be "password123".*
 
 ---
 
-## ⚠️ Security Notice
+## ⭐ Badges
+![Stars](https://img.shields.io/github/stars/khalidsakrjoker/Elsakr-Password-Vault?style=social)
+![License](https://img.shields.io/github/license/khalidsakrjoker/Elsakr-Password-Vault?style=flat-square&color=blue)
+![Language](https://img.shields.io/badge/Language-Python-yellow?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/khalidsakrjoker/Elsakr-Password-Vault/total?style=flat-square&color=green)
 
-This application stores passwords locally with AES-256 encryption. Your master password is used to derive the encryption key using PBKDF2. **Never share your master password or the vault.db file.**
+## 📋 Table of Contents
+- [🦅 Elsakr Password Vault](#-elsakr-password-vault)
+  - [⭐ Badges](#-badges)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🧐 What is it?](#-what-is-it)
+  - [✨ Features](#-features)
+  - [📦 Usage](#-usage)
+  - [🤝 Contributing](#-contributing)
+  - [📜 License](#-license)
+  - [📞 Contact](#-contact)
+  - [🇪🇬 Arabic Version / النسخة العربية](#-arabic-version--النسخة-العربية)
 
 ---
+
+## 🧐 What is it?
+**Elsakr Password Vault** is an all-in-one security tool designed to help you manage your digital safety. It generates cryptographically strong passwords, analyzes the strength of your existing ones, and securely stores credentials using industry-standard encryption.
 
 ## ✨ Features
+- **Strong Generator**: Create complex passwords with custom lengths and character sets.
+- **Strength Analyzer**: Visual feedback on how crackable your password is.
+- **Secure Vault**: Encrypted storage for your credentials.
+- **Local First**: Your database never leaves your device.
 
-### 🔑 Password Generator
-- Customizable length (8-64 characters)
-- Character options: uppercase, lowercase, digits, symbols
-- Exclude ambiguous characters (0, O, 1, l, I)
-- Passphrase generator (word-based)
-- One-click copy with auto-clear (30 seconds)
+## 📦 Usage
+![App Screenshot](./assets/Screenshot.png)
 
-### 📊 Password Analyzer
-- Real-time strength meter
-- Crack time estimation
-- Improvement suggestions
-- Uses zxcvbn for accurate analysis
-
-### 🔒 Secure Vault
-- AES-256 encryption
-- Master password protection
-- Categories for organization
-- Search and filter
-- Export/Import (planned)
+1. **Setup**: Create a strong master password on first launch.
+2. **Generate**: Use the Generator tab to create new credentials.
+3. **Store**: Save them to the Vault tab.
+4. **Analyze**: Check existing passwords for weaknesses.
 
 ---
 
-## 📸 Screenshot
+## 🤝 Contributing
+Security improvements are always welcome. Please ensure any PR doesn't compromise existing encryption standards.
 
-<p align="center">
-  <img src="assets/Screenshot.png" alt="App Screenshot" width="800">
-</p>
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
----
-
-## 🚀 Quick Start
-
-### Option 1: Run from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/khalidsakrjoker/elsakr-password-vault.git
-cd elsakr-password-vault
-
-# Create virtual environment
-python -m venv venv
-.\venv\Scripts\Activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python main.py
-```
-
-### Option 2: Download EXE
-
-Download from [Releases](https://github.com/khalidsakrjoker/elsakr-password-vault/releases).
+## 📞 Contact
+**Elsakr Tools** - [elsakr.company](https://elsakr.company)  
+*Open Source Tools with a Falcon’s Vision.*
 
 ---
 
-## 🛠️ Build Executable
+# 🇪🇬 Arabic Version / النسخة العربية
 
-```bash
-pip install pyinstaller
+# 🦅 Elsakr Password Vault (خزنة كلمات المرور)
 
-pyinstaller --noconsole --onefile --icon="assets/fav.ico" --name="Elsakr Password Vault" --add-data "assets;assets" main.py
-```
+<div align="center">
+  <a href="https://elsakr.company">
+    <img src="https://elsakr.company/Sakr-logo.webp" alt="Elsakr Logo" width="200">
+  </a>
+</div>
 
----
-
-## 🔒 Security Details
-
-| Feature | Implementation |
-|---------|----------------|
-| Encryption | AES-256 (Fernet) |
-| Key Derivation | PBKDF2-HMAC-SHA256 |
-| Iterations | 480,000 |
-| Storage | SQLite (encrypted fields) |
-| Clipboard | Auto-clears after 30 seconds |
+> **جزء من نظام صقر للأدوات مفتوحة المصدر — [عرض كل الأدوات](https://elsakr.company/tools)**  
+> *ولد. حلل. احمي. باسووردك مينفعش يكون "123456".*
 
 ---
 
-## 📦 Requirements
+## 🧐 ما هي هذه الأداة؟
+أداة أمنية شاملة مصممة عشان تساعدك في أمانك الرقمي. بتولد كلمات مرور قوية ومستحيلة التخمين، وبتحلل قوة كلمات المرور الحالية، وبتحفظ بياناتك بشكل مشفر وآمن جداً.
 
-- Python 3.10+
-- cryptography
-- pyperclip
-- zxcvbn
-- Pillow
+## ✨ المميزات
+- **توليد قوي**: إنشاء كلمات مرور معقدة بأطوال وحروف مخصصة.
+- **تحليل القوة**: اعرف باسووردك ممكن يتكرك (يُخترق) في قد إيه.
+- **الخزنة**: حفظ مشفر لبيانات الدخول.
+- **محلي أولاً**: قاعدة البيانات مش بتخرج من جهازك أبداً.
 
----
+## 📦 طريقة الاستخدام
+1. **الإعداد**: اعمل كلمة مرور رئيسية (Master Password) قوية عند أول فتح.
+2. **توليد**: استخدم تبويب "Generator" لعمل باسوورد جديد.
+3. **حفظ**: احفظه في "Vault".
+4. **تحليل**: افحص كلمات المرور القديمة وشوف مدى ضعفها.
 
-## 📄 License
-
-MIT License - [Elsakr Software](https://elsakr.company)
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://elsakr.company">Elsakr</a>
-</p>
+## 📞 تواصل معنا
+**أدوات صقر** - [elsakr.company](https://elsakr.company)  
+*أدوات مفتوحة المصدر برؤية صقر.*
